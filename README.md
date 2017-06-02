@@ -139,12 +139,13 @@ obj.test2() // => obj
 2）无法用call/apply/bind来改变指向
 
 3）在ES6中，会默认采用**严格模式**，因此默认情况下this不是指向window对象，而是undefined。
+
 ```javascript
 setTimeout(() =console.log(this),1000)//undefined,不是window
 ```
-4)不可以使用arguments对象，该对象在函数体内不存在，如果要用，可以用rest参数代替。
+4）不可以使用arguments对象，该对象在函数体内不存在，如果要用，可以用rest参数代替。
 
-5) 箭头函数还有一个特点就是能够简化return的书写。
+5）箭头函数还有一个特点就是能够简化return的书写。
 
 ```javascript
 var a = function (n){
@@ -153,6 +154,6 @@ var a = function (n){
 var b = (n) => n //可以省略return和花括号
 a(1)  // => 1
 b(1)  // => 1
- ```
+```
     
 
