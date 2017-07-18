@@ -84,9 +84,9 @@ let jsonData = {
 let {id,status,data:number} = jsonData
 console.log(id,status,number) // 42,"ok",[1,2]
 ```
-##三、class类
+## 三、class类 ##
 
-在没有class的时候，创建类的一种比较标准的方式是将非函数的属性放到构造函数里，函数属性在原型链里添加。类的继承的实现就更为多样：对象冒充、call/apply方式、原型链方式等。es6的class和extends关键字的出现给出了一个统一的规范
+> 在没有class的时候，创建类的一种比较标准的方式是将非函数的属性放到构造函数里，函数属性在原型链里添加。类的继承的实现就更为多样：对象冒充、call/apply方式、原型链方式等。es6的class和extends关键字的出现给出了一个统一的规范
 ```javascript
 class People{
   constructor(name,age,gender){
